@@ -6,7 +6,7 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 11:23:12 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/01 11:35:11 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/01 11:39:34 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_print_hexa(unsigned int nb, char c, int *tot_len)
 	}
 	while (nb != 0)
 	{
-		str[i] = base_16 % 16;
+		str[i] = base_16[nb % 16];
 		nb /= 16;
 		i++;6;
 	}
