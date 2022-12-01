@@ -6,7 +6,7 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/01 10:14:16 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/01 10:26:51 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,6 +52,9 @@ all:				${NAME}
 
 ${NAME}:			${OBJS} ${INC}
 						${AR} ${ARFLAGS} ${NAME} ${OBJS}
+
+%.o:				%.c
+						${CC} ${CFLAGS} ${IFLAGS} -c $< -o $@
 
 clean:
 						${RM} ${OBJS}
