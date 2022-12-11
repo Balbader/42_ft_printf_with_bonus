@@ -6,7 +6,7 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/01 10:42:36 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/11 15:19:33 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ SRCS_NB_FILES	=	ft_print_hexa.c ft_print_nb.c ft_print_ptr.c ft_print_unsigned.c
 SRCS_NB_DIR		=	numbers/
 SRCS_NB			=	$(addprefix${SRCS_NB_DIR}, ${SRCS_NB_FILES}))
 
-SRCS_FL_FILES	=	ft_dot_with_str.c ft_left_justify.c ft_padd_with_zero.c
+SRCS_FL_FILES	=	ft_hashtag.c ft_space.c ft_plus.c
 SRCS_FL_DIR		=	flags/
 SRCS_FL			=	$(addprefix${SRCS_FL_DIR}, ${SRCS_FL_FILES}))
 
