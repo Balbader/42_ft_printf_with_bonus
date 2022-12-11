@@ -6,7 +6,7 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/11 15:19:33 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/11 15:33:38 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ SRC				=	$(addprefix ${SRCS_PATH}, ${SRCS_NAME})
 
 .SUFFIXES:			.c .o .h
 
-OBJS			=	${SRC:.c=.o}
+OBJS			=	${SRCS:.c=.o}
 
 all:				${NAME}
 
