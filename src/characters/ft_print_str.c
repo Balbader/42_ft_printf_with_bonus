@@ -6,7 +6,7 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:47:24 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/01 12:05:20 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/11 15:10:45 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_print_str(char *str, int *tot_len)
 	}
 	i = 0;
 	while (str[i] != '\0')
-		i++;
+		++i;
 	write(1, str, i);
 	(*tot_len) += i;
 }
