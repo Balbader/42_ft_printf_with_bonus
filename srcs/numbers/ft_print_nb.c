@@ -6,11 +6,11 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 11:01:16 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/01 12:04:17 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/12 14:59:42 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ft_printf.h"
+#include "../../includes/ft_printf.h"
 
 void	ft_print_nb(int nb, int *tot_len)
 {
@@ -25,7 +25,7 @@ void	ft_print_nb(int nb, int *tot_len)
 		ft_print_char('-', tot_len);
 		ft_print_nb(nb * -1, tot_len);
 	}
-	else 
+	else
 	{
 		if (nb > 9)
 			ft_print_nb(nb / 10, tot_len);
