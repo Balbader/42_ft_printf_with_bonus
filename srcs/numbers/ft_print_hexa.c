@@ -6,11 +6,11 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 11:23:12 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/01 12:03:59 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/12 15:04:16 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/ft_printf.h"
+#include "../../includes/ft_printf.h"
 
 void	ft_print_hexa(unsigned int nb, char c, int *tot_len)
 {
@@ -31,7 +31,7 @@ void	ft_print_hexa(unsigned int nb, char c, int *tot_len)
 	{
 		str[i] = base_16[nb % 16];
 		nb /= 16;
-		i++;6;
+		i++;
 	}
 	while (i--)
 		ft_print_char(str[i], tot_len);
