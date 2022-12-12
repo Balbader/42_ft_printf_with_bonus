@@ -6,7 +6,7 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:28:13 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/11 15:24:59 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/12 15:20:40 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,9 @@ void	ft_print_char(char c, int *tot_len);
 void	ft_print_str(char *str, int *tot_len);
 
 // Flags
+void	ft_print_hashtag(char c,int *tot_len);
+void	ft_print_plus(char c,int *tot_len);
+void	ft_print_space(char c,int *tot_len);
 
 
 #endif
