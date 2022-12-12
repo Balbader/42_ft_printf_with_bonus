@@ -6,14 +6,11 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/12 12:18:48 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/12 12:22:06 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	libftprintf.a
-
-INC_PATH		=	includes/
-INC_NAME		=	ft_printf.h
 
 CC				=	gcc
 CFLAGS			=	-Wall -Wextra -Werror
@@ -22,6 +19,9 @@ IFLAGS			=	-I${INC_PATH}
 AR				=	ar rc
 
 RM				=	rm -rf
+
+INC_PATH		=	includes/
+INC_NAME		=	ft_printf.h
 
 SRCS_CH_FILES	=	ft_print_char.c ft_print_str.c
 SRCS_CH_DIR		=	characters/
