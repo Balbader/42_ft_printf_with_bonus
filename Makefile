@@ -6,11 +6,14 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/11 15:33:38 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/11 15:35:27 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	libftprintf.a
+
+INC_PATH		=	include
+INC_NAME		=	ft_printf.h
 
 CC				=	gcc
 CFLAGS			=	-Wall -Wextra -Werror
@@ -37,9 +40,6 @@ SRCS_PATH		=	./src/
 SRCS_NAME		=	$(addprefix ${SRCS_DIR}, ${SRCS_CH}) \
 					$(addprefix ${SRCS_DIR}, ${SRCS_NB}) \
 					$(addprefix ${SRCS_DIR}, ${SRCS_FL})
-
-INC_PATH		=	include
-INC_NAME		=	ft_printf.h
 
 INC				=	$(addprefix ${INC_PATH}, ${INC_NAME})
 SRC				=	$(addprefix ${SRCS_PATH}, ${SRCS_NAME})
