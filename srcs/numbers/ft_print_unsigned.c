@@ -6,11 +6,11 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 15:13:35 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/12 15:18:51 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:24:18 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include "ft_printf.h"
 
 void	ft_print_unsigned(unsigned int u, int *tot_len)
 {

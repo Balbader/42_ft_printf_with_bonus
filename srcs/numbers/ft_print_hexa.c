@@ -6,11 +6,11 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 11:23:12 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/12 15:04:16 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:23:52 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include "ft_printf.h"
 
 void	ft_print_hexa(unsigned int nb, char c, int *tot_len)
 {

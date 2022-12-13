@@ -6,14 +6,14 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:28:13 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/13 12:15:27 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:17:59 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "libft.h"
+#include "../libft/libft.h"
 
 # include <unistd.h>
 # include <stdlib.h>

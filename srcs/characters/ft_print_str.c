@@ -6,11 +6,11 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:47:24 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/12 15:00:23 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:20:41 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/ft_printf.h"
+#include "ft_printf.h"
 
 void	ft_print_str(char *str, int *tot_len)
 {
