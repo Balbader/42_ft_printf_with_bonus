@@ -17,7 +17,6 @@ int main(void)
 	printf("%%X with #\n");
 	printf("%#X\n", 42);
 	printf("\n");
-	 printf("%##d\n", 42);
 
 	// Err with double #
 	// printf("%##d\n", 42);
@@ -58,6 +57,9 @@ int main(void)
 	printf("%+f\n", 42.42);
 	printf("\n");
 
+	// Err with u
+	// printf("%+u\n", 42);
+
 	// Err with double +
 	// printf("%++s\n", "Hello World");
 
@@ -70,5 +72,28 @@ int main(void)
 	printf("=====================\n");
 	printf("%17s\n", "Space: \' \'");
 	printf("=====================\n");
+	printf("%%d without ' '\n");
+	printf("%d\n", 42);
+	printf("%%d with ' '\n");
+	printf("%20d\n", 42);
+	printf("\n");
+
+	printf("%%i without ' '\n");
+	printf("%i\n", 42);
+	printf("%%i with ' '\n");
+	printf("%20i\n", 42);
+	printf("\n");
+
+	printf("%%f without ' '\n");
+	printf("%f\n", 42.42);
+	printf("%%f with ' '\n");
+	printf("%20f\n", 42.42);
+	printf("\n");
+
+	printf("%%u without ' '\n");
+	printf("%u\n", 42);
+	printf("%%u with ' '\n");
+	printf("%20u\n", -42);
+	printf("\n");
 	return (0);
 }
