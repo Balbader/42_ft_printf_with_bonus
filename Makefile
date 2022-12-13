@@ -6,7 +6,7 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/12 14:57:48 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/13 12:13:29 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,11 +14,18 @@ NAME			=	libftprintf.a
 
 CC				=	gcc
 CFLAGS			=	-Wall -Wextra -Werror
+IFLAGS			=	-I$(INC_PATH)
 
 AR				=	ar
 ARFLAGS			=	rc
 
 RM				=	rm -rf
+
+INC_PATH		=	./
+INC_NAME		=	libftprintf.h
+
+LIB_PATH		=	libft/
+LIB				=	$(LIB_PATH)/libft.h
 
 SRCS_CH_DIR		=	characters/
 SRCS_CH_FILES	=	ft_print_char.c \
@@ -51,11 +58,15 @@ OBJS			=	$(SRCS:.c=.o)
 
 all:				$(NAME)
 
-$(NAME):			$(OBJS)
+$(NAME):			$(LIB) $(OBJS)
+						cp $(LIB) $(LIBFT)
 						$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 
+$(LIB):
+						$(MAKE)
+
 %.o:				%.c
-						$(CC) $(CFLAGS) -c $< -o $@
+						$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
 
 clean:
 						$(RM) $(OBJS)
