@@ -6,36 +6,37 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:28:13 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/12 16:30:33 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:14:23 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include "libft.h"
+
 # include <unistd.h>
 # include <stdlib.h>
 # include <stddef.h>
 # include <stdarg.h>
 
-int		ft_printf(const char *str, ...);
+int			ft_printf(const char *str, ...);
 
 // Numbers
-void	ft_print_nb(int nb, int *tot_len);
-void	ft_print_hexa(unsigned int nb, int *tot_len);
-void	ft_print_unsigned(unsigned int u, int *tot_len);
+void		ft_print_nb(int nb, int *tot_len);
+void		ft_print_hexa(unsigned int nb, int *tot_len);
+void		ft_print_unsigned(unsigned int u, int *tot_len);
 
 // Pointers
-void	ft_print_ptr(size_t ptr, int *tot_len);
+void		ft_print_ptr(size_t ptr, int *tot_len);
 
 // Characters
-void	ft_print_char(char c, int *tot_len);
-void	ft_print_str(char *str, int *tot_len);
+void		ft_print_char(char c, int *tot_len);
+void		ft_print_str(char *str, int *tot_len);
 
 // Flags
-void	ft_print_hashtag(char c,int *tot_len);
-void	ft_print_plus(char c,int *tot_len);
-void	ft_print_space(char c,int *tot_len);
-
+void		ft_print_hashtag(char c,int *tot_len);
+void		ft_print_plus(char c,int *tot_len);
+void		ft_print_space(char c,int *tot_len);
 
 #endif
