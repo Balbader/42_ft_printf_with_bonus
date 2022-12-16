@@ -6,7 +6,7 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/16 09:32:06 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/16 09:36:35 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ OBJS			=	$(SRCS:.c=.o)
 
 all:				$(NAME)
 
-$(NAME):			$(LIB) $(OBJS)
+$(NAME):			$(OBJS)
 						$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 
 %.o:				%.c
