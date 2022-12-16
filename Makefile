@@ -6,13 +6,13 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/16 09:25:35 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/16 09:32:06 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	libftprintf.a
 
-INC_DIR			=	includes/
+INC_DIR			=	./includes/
 INC_FILE		=	ft_printf.h
 
 CHAR_DIR		=	characters/
@@ -27,16 +27,15 @@ NB_FILES		=	ft_print_hexa.c \
 					ft_print_unsigned.c
 NB				=	$(addprefix $(NB_DIR), $(NB_FILES))
 
-SRCS_DIR		=	srcs/
+SRCS_DIR		=	./srcs/
 SRCS_FILES		=	$(CHAR) \
 					$(NB)
 
 SRCS			=	$(addprefix $(SRCS_DIR), $(SRCS_FILES))
-INC				=	$(addprefix $(INC_DIR), $(INC_FILE))
 
 CC				=	gcc
 CFLAGS			=	-Wall -Wextra -Werror
-IFLAGS			=	-I$(INC)
+IFLAGS			=	-I$(INC_DIR)
 
 AR				=	ar
 ARFLAGS			=	rc
