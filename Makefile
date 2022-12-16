@@ -6,7 +6,7 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/16 10:04:08 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/16 10:16:40 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ NB				=	$(addprefix $(NB_DIR), $(NB_FILES))
 
 SRCS_DIR		=	./srcs/
 SRCS_FILES		=	$(CHAR) \
-					$(NB)
+					$(NB) \
+					ft_printf.c
 
 SRCS			=	$(addprefix $(SRCS_DIR), $(SRCS_FILES))
 
