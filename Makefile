@@ -6,33 +6,33 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/16 09:15:59 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/16 09:25:35 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	libftprintf.a
 
-INC_PATH		=	./
-INC_NAME		=	libftprintf.h
+INC_DIR			=	includes/
+INC_FILE		=	ft_printf.h
 
-SRCS_CH_DIR		=	characters/
-SRCS_CH_FILES	=	ft_print_char.c \
+CHAR_DIR		=	characters/
+CHAR_FILES		=	ft_print_char.c \
 					ft_print_str.c
-SRCS_CH			=	$(addprefix $(SRCS_CH_DIR), $(SRCS_CH_FILES))
+CHAR			=	$(addprefix $(CHAR_DIR), $(CHAR_FILES))
 
-SRCS_NB_DIR		=	numbers/
-SRCS_NB_FILES	=	ft_print_hexa.c \
+NB_DIR			=	numbers/
+NB_FILES		=	ft_print_hexa.c \
 					ft_print_nb.c \
 					ft_print_ptr.c \
 					ft_print_unsigned.c
-SRCS_NB			=	$(addprefix $(SRCS_NB_DIR), $(SRCS_NB_FILES))
+NB				=	$(addprefix $(NB_DIR), $(NB_FILES))
 
-SRCS_PATH		=	srcs/
-SRCS_NAME		=	$(SRCS_CH) \
-					$(SRCS_NB)
+SRCS_DIR		=	srcs/
+SRCS_FILES		=	$(CHAR) \
+					$(NB)
 
-SRCS			=	$(addprefix $(SRCS_PATH), $(SRCS_NAME))
-INC				=	$(addprefix $(INC_PATH), $(INC_NAME))
+SRCS			=	$(addprefix $(SRCS_DIR), $(SRCS_FILES))
+INC				=	$(addprefix $(INC_DIR), $(INC_FILE))
 
 CC				=	gcc
 CFLAGS			=	-Wall -Wextra -Werror
