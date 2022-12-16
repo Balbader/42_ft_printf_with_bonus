@@ -6,14 +6,12 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:28:13 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/13 12:17:59 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/16 09:07:14 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-
-#include "../libft/libft.h"
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -33,10 +31,5 @@ void		ft_print_ptr(size_t ptr, int *tot_len);
 // Characters
 void		ft_print_char(char c, int *tot_len);
 void		ft_print_str(char *str, int *tot_len);
-
-// Flags
-void		ft_print_hashtag(char c,int *tot_len);
-void		ft_print_plus(char c,int *tot_len);
-void		ft_print_space(char c,int *tot_len);
 
 #endif
