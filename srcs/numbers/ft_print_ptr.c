@@ -6,7 +6,7 @@
 /*   By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 12:02:13 by baalbade          #+#    #+#             */
-/*   Updated: 2022/12/13 12:24:09 by baalbade         ###   ########.fr       */
+/*   Updated: 2022/12/16 10:25:15 by baalbade         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_print_ptr(size_t ptr, int *tot_len)
 		ft_print_str("(nil)", tot_len);
 		return ;
 	}
+	ft_print_str("0x", tot_len);
 	while (ptr != 0)
 	{
 		ptr_str[i] = base_16[ptr % 16];
