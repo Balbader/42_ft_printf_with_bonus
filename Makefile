@@ -6,7 +6,7 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/13 12:30:10 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/16 09:05:48 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,9 +24,6 @@ RM				=	rm -rf
 INC_PATH		=	./
 INC_NAME		=	libftprintf.h
 
-LIB_PATH		=	libft/
-LIB				=	$(LIB_PATH)/libft.h
-
 SRCS_CH_DIR		=	characters/
 SRCS_CH_FILES	=	ft_print_char.c \
 					ft_print_str.c
@@ -39,15 +36,8 @@ SRCS_NB_FILES	=	ft_print_hexa.c \
 					ft_print_unsigned.c
 SRCS_NB			=	$(addprefix $(SRCS_NB_DIR), $(SRCS_NB_FILES))
 
-SRCS_FL_DIR		=	flags/
-SRCS_FL_FILES	=	ft_hashtag.c \
-					ft_space.c \
-					ft_plus.c
-SRCS_FL			=	$(addprefix $(SRCS_FL_DIR), $(SRCS_FL_FILES))
-
 SRCS_PATH		=	srcs/
 SRCS_NAME		=	$(SRCS_CH) \
-					$(SRCS_FL) \
 					$(SRCS_NB)
 
 SRCS			=	$(addprefix $(SRCS_PATH), $(SRCS_NAME))
@@ -59,11 +49,7 @@ OBJS			=	$(SRCS:.c=.o)
 all:				$(NAME)
 
 $(NAME):			$(LIB) $(OBJS)
-						cp $(LIB) $(LIBFT)
 						$(AR) $(ARFLAGS) $(NAME) $(OBJS)
-
-$(LIB):
-						$(MAKE)
 
 %.o:				%.c
 						$(CC) $(CFLAGS) $(IFLAGS) -c $< -o $@
