@@ -6,20 +6,11 @@
 #    By: baalbade <baalbade@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/01 07:52:31 by baalbade          #+#    #+#              #
-#    Updated: 2022/12/16 09:05:48 by baalbade         ###   ########.fr        #
+#    Updated: 2022/12/16 09:15:59 by baalbade         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	libftprintf.a
-
-CC				=	gcc
-CFLAGS			=	-Wall -Wextra -Werror
-IFLAGS			=	-I$(INC_PATH)
-
-AR				=	ar
-ARFLAGS			=	rc
-
-RM				=	rm -rf
 
 INC_PATH		=	./
 INC_NAME		=	libftprintf.h
@@ -41,6 +32,16 @@ SRCS_NAME		=	$(SRCS_CH) \
 					$(SRCS_NB)
 
 SRCS			=	$(addprefix $(SRCS_PATH), $(SRCS_NAME))
+INC				=	$(addprefix $(INC_PATH), $(INC_NAME))
+
+CC				=	gcc
+CFLAGS			=	-Wall -Wextra -Werror
+IFLAGS			=	-I$(INC)
+
+AR				=	ar
+ARFLAGS			=	rc
+
+RM				=	rm -rf
 
 .SUFFIXES:			.c .o .h
 
